@@ -8,7 +8,11 @@
 <meta http-equiv="X-Frame-Options" content="DENY">
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
 <meta name="author" content="Gangapuram Bhargav">
-
+ <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; object-src 'none'">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
 
 
 
@@ -39,12 +43,6 @@
 	</head>
 	<body>
 		
-		<!-- redirect to chrome for android 
-		 <script>
-            if(navigator.userAgent.includes("Instagram")){
-                      window.location.href = "https://gangapurambhargav.github.io/bio/links.html";
-            }
-            </script>      -->
 		
 		<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CRW45D"
