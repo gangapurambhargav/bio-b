@@ -1,159 +1,1468 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-	<!-- Google Search Ranking -->
-<meta name="googlebot" content="index, follow">
-<meta name="bingbot" content="index, follow">
-<meta name="yahoo-slurp" content="index, follow">
-<meta http-equiv="X-Frame-Options" content="DENY">
-<meta http-equiv="Access-Control-Allow-Origin" content="*">
-<meta name="author" content="Gangapuram Bhargav">
- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; object-src 'none'">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Gangapuram Bhargav — Cloud Network Engineer</title>
+    <meta name="description" content="Cloud Network Engineer and DevOps Engineer. AWS, GCP, Kubernetes, Docker, CI/CD (Jenkins + SonarQube), SonicWALL firewalls, IPsec VPNs, hybrid cloud networking." />
+    <meta name="keywords" content="Cloud Network Engineer, DevOps Engineer, AWS, GCP, Kubernetes, Docker, Jenkins, SonarQube, SonicWALL, IPsec VPN, OSPF, NAT, DHCP, Infrastructure as Code" />
+    <meta name="author" content="Gangapuram Bhargav" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0a0b0f" />
+    <link rel="canonical" href="https://bhargav.work/" />
+    <link rel="alternate" href="https://www.bhargav.work/resume.pdf" type="application/pdf" title="Resume PDF" />
+    <link rel="alternate" href="https://docs.google.com/document/d/1T3ziEXhqJrBt0SKwln3M0K4_6RS9TcUs80Dwh9xQz7I/edit?tab=t.0" title="Resume Google Doc" />
 
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Gangapuram Bhargav" />
+    <meta property="og:title" content="Gangapuram Bhargav — Cloud Network & DevOps Engineer" />
+    <meta property="og:description" content="AWS | GCP | Kubernetes | Docker | Jenkins | SonarQube | SonicWALL | IPsec | Hybrid Cloud." />
+    <meta property="og:url" content="https://bhargav.work/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gangapuram Bhargav — Cloud Network & DevOps Engineer" />
+    <meta name="twitter:description" content="AWS | GCP | Kubernetes | Docker | Jenkins | SonarQube | SonicWALL | IPsec | Hybrid Cloud." />
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gangapuram Bhargav",
+      "jobTitle": ["Cloud Network Engineer", "DevOps Engineer"],
+      "email": "mailto:gangapurambhargav1@gmail.com",
+      "telephone": "+919603553366",
+      "url": "https://bhargav.work/",
+      "image": "https://bhargav.work/avatar.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/gangapurambhargav-cloudnetworkengineer/",
+        "https://bhargavgbs.substack.com/",
+        "https://github.com/"
+      ],
+      "knowsAbout": ["AWS", "GCP", "Kubernetes", "Docker", "Jenkins", "SonarQube", "SonicWALL", "IPsec", "OSPF", "Routing", "NAT", "DHCP"],
+      "address": {"@type": "PostalAddress", "addressLocality": "Hyderabad", "addressCountry": "IN"}
+    }
+    </script>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-		<!-- SEO Meta Tags -->
-<meta name="description" content="Bhargav Gangapuram - Cloud Network Engineer | Tech Writer | Cybersecurity Enthusiast">
-<meta name="keywords" content="Cloud, Networking, Cybersecurity, DevOps, GCP, SonicWall, Tech Writer, Bhargav Gangapuram">
-<meta name="author" content="Bhargav Gangapuram">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Google tag site tag-->
-		<!-- Google tag (gtag.js) -->
+    <!-- Fonts: modern grotesk + mono for accents -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Calendly popup widget styles -->
+    <link rel="preconnect" href="https://assets.calendly.com" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 
-		<link rel = "icon" href = 
-"https://1.bp.blogspot.com/-fsRl6vRxkbY/XpntlsPlDfI/AAAAAAAAImw/uMYdP8q2s7AEHUUK0DRW2IzUX9BQsl9gwCK4BGAsYHg/Webp.net-resizeimage.jpg" 
-        type = "image/x-icon">
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
-		<title>Bhargav Gangapuram </title>
-<meta http-equiv="content-language" content="en">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡️</text></svg>">
+    <style>
+/*
+  Modern portfolio theme — bold, typographic, and airy.
+  Fonts: Space Grotesk (display), Inter (text), JetBrains Mono (accents)
+*/
 
-		
-	</head>
-	<body>
-		
-		
-		<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CRW45D"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-		<div class="container">
-			<div class="circle-shape">
-				<a
-					href="https://www.instagram.com/gangapurambhargav/"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<img
-						src="images/pic.jpg"
-						alt="Gangapuram Bhargav"
-						class="profile-pic"
-					
-					     />
-				</a>
-			</div>
-			<a
-				href="https://www.instagram.com/gangapurambhargav/"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="ig-link"
-			>
-				Bhargav Gangapuram
-			</a>
-			<div class="link-list">
-				
-		
+:root {
+  --bg: #0a0b0f;
+  --bg-2: #0e1117;
+  --text: #e6e6e6;
+  --muted: #a6adbb;
+  --card: rgba(255,255,255,0.03);
+  --border: rgba(255,255,255,0.12);
+  --brand: #86efac; /* mint */
+  --brand-2: #60a5fa; /* blue */
+  --accent: #f472b6; /* pink */
+  --shadow: 0 10px 30px rgba(0,0,0,0.35);
 
-				<a
-					href="https://bit.ly/gbcert"
-					target="_blank"
-					
-				>
-					<div class="link-list-item light">
-						INTERNSHIPS/CERTIFICATIONS
-					</div>
-				</a>
+  --radius: 14px;
+  --radius-sm: 10px;
+  --container: 1100px;
+  --measure: 68ch;
+  --leading: 1.65;
+  --header: 72px;
 
-				<a
-					href="https://docs.google.com/document/d/1T3ziEXhqJrBt0SKwln3M0K4_6RS9TcUs80Dwh9xQz7I/edit?usp=sharing"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<div class="link-list-item dark">
-						RESUME 
-					</div>
-				</a>
-				<a
-					href="https://github.com/gangapurambhargav/2021-wrap-python"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<div class="link-list-item dark">
-					  PYTHON PROJECTS
-					</div>
-				</a>
-				<a
-					href="https://github.com/gangapurambhargav/2021-wrap-web" 
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<div class="link-list-item bright">
-						WEB PROJECTS
-					</div>
-				</a>
-				<a
-					href="https://bhargavgbs.substack.com/" 
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<div class="link-list-item bright">
-						MY NEWS-LETTER & RESEARCH 
-					</div>
-				</a>
-				<!--<a href="mailto:gangapurambhargav1@gmail.com">
-					<div class="link-list-item light">
-						💌 MAIL ME
-					</div>
-				</a>
-			</div>-->
-			<div class="icon-list">
-				 <!--Github icons link with image-->
-				<a href="https://github.com/gangapurambhargav" target="_blank" rel="noopener noreferrer" >
-					<img src="images/icon-github.png" alt="github link" class="icon-list-img" />
-				</a>
-				 <!--Contact ME link with image-->
-			 <a href="https://gangapurambhargav.github.io/bio-b/contact.html" target="_blank"rel="noopener noreferrer" >
-				<img src="images/icon-message.png" alt="contact link" class="icon-list-img" /> 
-			</a>
-			
-				<a href="https://www.linkedin.com/in/gangapurambhargav/" target="_blank" rel="noopener noreferrer" >
-				<img src="images/icons8-linkedin-50.png" alt="LinkedIN" class="icon-list-img" /> 
-			</a>
-			</div><!--Conatiner class div-->
-		</div>
-		
-<footer>
-		 <small>&copy;<a href="mailto:gangapurambhargav1@gmail.com">Gangapuram Bhargav 2025 </a></small>
-		
-		<br>
-		<script>
-			var date = document.lastModified;
-			document.write("Last Updated On "+date);
-		 </script>
-	</footer>	
-		</div>
-		
-	</body>
-</html>
+  --f1: clamp(2.8rem, 6vw, 5.5rem);
+  --f2: clamp(1.8rem, 3vw, 2.6rem);
+  --f3: clamp(1.2rem, 2vw, 1.4rem);
+  --f4: 0.95rem;
+}
 
+[data-theme="light"] {
+  --bg: #f7f8fb;
+  --bg-2: #ffffff;
+  --text: #0f1222;
+  --muted: #4b5160;
+  --card: rgba(0,0,0,0.04);
+  --border: rgba(0,0,0,0.1);
+  --shadow: 0 8px 22px rgba(0,0,0,0.07);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: var(--leading);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--bg-2); color: var(--text); padding: 8px 12px; border-radius: 8px; }
+
+.container { width: min(100%, var(--container)); margin: 0 auto; padding: 0 20px; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+h1, h2 { text-wrap: balance; }
+h1, h2 { text-wrap: balance; }
+a, button { touch-action: manipulation; }
+img, video { max-width: 100%; height: auto; }
+
+/* Header */
+.site-header { position: fixed; top: 0; left: 0; right: 0; backdrop-filter: saturate(140%) blur(12px); background: color-mix(in oklab, var(--bg-2) 96%, transparent); border-bottom: 1px solid var(--border); z-index: 1000; box-shadow: 0 6px 20px rgba(0,0,0,0.25); }
+.site-header .container { padding: calc(14px + env(safe-area-inset-top)/4) calc(20px + env(safe-area-inset-right)) 14px calc(20px + env(safe-area-inset-left)); display: flex; align-items: center; gap: 12px; }
+.site-header .container > .brand { margin-right: 8px; }
+.site-header .container > .nav { margin: 0 auto; }
+.site-header .container > button { margin-left: 6px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); }
+.brand .mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background:
+    conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2), var(--accent), var(--brand));
+  color: #0a0b0f; font-weight: 800; letter-spacing: 0.5px; }
+.brand-text { font-weight: 700; letter-spacing: 0.2px; }
+.nav { display: none; gap: 16px; }
+.nav a { color: var(--muted); text-decoration: none; font-weight: 600; display: inline-block; padding: 8px 10px; border: none; border-radius: 10px; }
+.nav a:hover { color: var(--text); }
+.nav a { position: relative; }
+.nav a.active { color: var(--text); }
+.nav a.active::after { content: ""; position: absolute; left: 0; right: 0; bottom: -8px; height: 2px; background: linear-gradient(90deg, var(--brand), var(--brand-2)); border-radius: 2px; }
+.menu-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; background: var(--card); color: var(--text); border: 1px solid var(--border); cursor: pointer; touch-action: manipulation; font-size: 1.1rem; }
+.menu-toggle[aria-expanded="true"] { background: color-mix(in oklab, var(--card) 70%, var(--brand) 10%); }
+.menu-close { display: none; }
+.theme-toggle { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 999px; padding: 6px 10px; cursor: pointer; }
+.accent-toggle { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 10px; padding: 6px 10px; cursor: pointer; }
+.ats-toggle { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 10px; padding: 6px 10px; cursor: pointer; }
+.theme-toggle .sun { display: none; }
+[data-theme="light"] .theme-toggle .sun { display: inline; }
+[data-theme="light"] .theme-toggle .moon { display: none; }
+
+@media (min-width: 900px) { .nav { display: flex; flex: 1; align-items: center; justify-content: center; gap: 16px; padding: 0; border: 0; background: transparent; max-width: 100%; flex-wrap: wrap; } }
+@media (min-width: 900px) { .menu-toggle { display: none; } }
+@media (min-width: 900px) { .accent-toggle { margin-left: 6px; } }
+@media (min-width: 900px) { .ats-toggle { margin-left: 6px; } }
+
+/* Mobile nav overlay */
+@media (max-width: 899.98px) {
+  body.nav-open { overflow: hidden; }
+  body.nav-open .nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    padding: calc(24px + env(safe-area-inset-top)) 24px 32px 24px;
+    background: color-mix(in oklab, var(--bg-2) 96%, transparent);
+    -webkit-backdrop-filter: blur(8px) saturate(120%);
+    backdrop-filter: blur(8px) saturate(120%);
+    gap: 18px;
+    z-index: 15;
+    height: 100dvh;
+    overflow-y: auto;
+  }
+  body.nav-open .nav a { font-size: 1.1rem; padding: 14px 12px; display: block; border: 1px solid var(--border); border-radius: 12px; }
+  body.nav-open .menu-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: calc(10px + env(safe-area-inset-top));
+    right: 14px;
+    width: 46px; height: 46px;
+    border-radius: 12px;
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    z-index: 20;
+    touch-action: manipulation;
+  }
+}
+
+/* Progress bar */
+#progress { position: fixed; top: 0; left: 0; height: 3px; width: 100%; background: linear-gradient(90deg, var(--brand), var(--brand-2)); z-index: 1100; transform-origin: 0 50%; transform: scaleX(0); }
+
+/* Back to top */
+.to-top { position: fixed; right: 16px; bottom: 16px; width: 44px; height: 44px; border-radius: 999px; display: none; align-items: center; justify-content: center; background: var(--card); color: var(--text); border: 1px solid var(--border); z-index: 16; touch-action: manipulation; }
+.to-top.show { display: inline-flex; }
+
+/* Command palette */
+#cmdk { display: none; }
+body.cmdk-open #cmdk { display: block; }
+#cmdk .cmdk-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.4); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); z-index: 30; }
+#cmdk .cmdk-panel { position: fixed; top: 12%; left: 50%; transform: translateX(-50%); width: min(92vw, 640px); background: var(--bg-2); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); z-index: 31; padding: 10px; }
+#cmdk-input { width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--text); font-size: 1rem; }
+#cmdk-list { list-style: none; margin: 8px 0 0; padding: 0; max-height: 50vh; overflow: auto; }
+#cmdk-list li { padding: 10px 12px; border-radius: 10px; border: 1px solid transparent; cursor: pointer; }
+#cmdk-list li[aria-selected="true"], #cmdk-list li:hover { background: color-mix(in oklab, var(--card) 70%, var(--brand) 8%); border-color: var(--border); }
+
+/* Anchor links on section titles */
+.section-title { position: relative; }
+.section-title .anchor { opacity: 0; margin-left: 8px; text-decoration: none; color: var(--muted); font-size: 0.9rem; }
+.section-title:hover .anchor, .section-title:focus-within .anchor { opacity: 1; }
+
+/* Toast */
+.toast { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); background: var(--bg-2); color: var(--text); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; z-index: 50; display: none; }
+.toast.show { display: block; }
+
+/* Scheduler */
+#scheduler { display: none; }
+body.sched-open #scheduler { display: block; }
+#scheduler .sched-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.45); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); z-index: 40; }
+#scheduler .sched-panel { position: fixed; top: 8%; left: 50%; transform: translateX(-50%); width: min(92vw, 760px); background: var(--bg-2); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); z-index: 41; padding: 16px; }
+.sched-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.sched-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 10px; }
+@media (min-width: 700px) { .sched-grid { grid-template-columns: 1.1fr 1fr; } }
+.sched-dates, .sched-times { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; }
+.sched-dates button, .sched-times button { padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--text); cursor: pointer; }
+.sched-dates button[aria-pressed="true"], .sched-times button[aria-pressed="true"] { background: linear-gradient(135deg, color-mix(in oklab, var(--brand) 45%, #fff), color-mix(in oklab, var(--brand-2) 45%, #fff)); color: #0a0b0f; }
+.sched-actions { display: flex; gap: 10px; margin-top: 12px; }
+
+/* (removed role match styles) */
+
+/* ATS mode */
+body.ats { background: #ffffff; }
+body.ats .site-header { background: #fff; border-bottom: 1px solid #e5e7eb; }
+body.ats .art, body.ats .accent-toggle, body.ats .theme-toggle, body.ats .menu-toggle, body.ats .menu-close { display: none !important; }
+body.ats .card, body.ats .pill-group, body.ats .contact-item { background: #fff; border: 1px solid #e5e7eb; box-shadow: none; }
+body.ats .section + .section { border-top: 1px solid #e5e7eb; }
+body.ats .btn { box-shadow: none; }
+.ats-bar { position: sticky; top: 0; background: #f8fafc; color: #0f172a; border-bottom: 1px solid #e5e7eb; padding: 8px 0; display: none; z-index: 12; }
+body.ats .ats-bar { display: block; }
+.ats-actions { display: flex; gap: 8px; }
+
+/* Tablet/phone hero readability */
+@media (max-width: 900px) {
+  .hero .headline {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: var(--text) !important;
+    color: var(--text) !important;
+    line-height: 1.12;
+    text-shadow: none;
+    font-size: clamp(1.7rem, 5.6vw, 2.6rem);
+    letter-spacing: 0;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+}
+
+/* Hero */
+.section { padding: clamp(28px, 5vw, 64px) 0; position: relative; }
+.section { scroll-margin-top: 84px; }
+.hero { padding-top: max(calc(var(--header) + 24px), clamp(72px, 12vw, 120px)); overflow: visible; }
+.hero-title { margin: 0 0 10px; }
+.hero .hero-wrap { position: relative; z-index: 2; }
+.hero .eyebrow { display: block; font-family: "Space Grotesk", Inter, system-ui, sans-serif; font-size: clamp(1.3rem, 3.2vw, 2.1rem); color: var(--text); margin-top: 6px; letter-spacing: -0.01em; }
+.hero .headline { display: block; font-family: "Space Grotesk", Inter, system-ui, sans-serif; font-size: var(--f1); line-height: 1.05; font-weight: 700; letter-spacing: -0.01em; color: var(--text); -webkit-text-fill-color: var(--text); }
+.hero-sub { font-size: var(--f3); color: var(--muted); max-width: 60ch; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.meta { display: flex; gap: 12px; flex-wrap: wrap; padding: 0; margin: 8px 0 0; list-style: none; color: var(--muted); font-size: 0.95rem; }
+
+/* Professional typography */
+main p { max-width: var(--measure); hyphens: auto; }
+@supports (text-wrap: pretty) { main p { text-wrap: pretty; } }
+.section-title { letter-spacing: -0.012em; }
+.role h3 { letter-spacing: -0.005em; }
+
+.btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; padding: 10px 16px; text-decoration: none; font-weight: 600; border: 2px solid var(--border); color: var(--text); background: var(--card); box-shadow: var(--shadow); min-height: 44px;
+  transition: transform .15s ease, background .2s ease, border-color .2s ease; }
+.btn:hover { transform: translateY(-1px); border-color: color-mix(in oklab, var(--brand) 60%, var(--border)); }
+.btn.primary { background: linear-gradient(135deg, color-mix(in oklab, var(--brand) 40%, #fff), color-mix(in oklab, var(--brand-2) 50%, #fff)); color: #0a0b0f; border-color: color-mix(in oklab, var(--brand) 50%, var(--border)); }
+.btn.ghost { background: transparent; border-color: color-mix(in oklab, var(--text) 24%, var(--border)); }
+.btn.soft { background: color-mix(in oklab, var(--card) 70%, var(--brand) 8%); border-color: color-mix(in oklab, var(--brand) 40%, var(--border)); }
+.btn:focus-visible { outline: 3px solid color-mix(in oklab, var(--brand) 50%, #ffffff); outline-offset: 2px; }
+
+.art { position: absolute; inset: -10% -10% auto auto; width: 600px; height: 600px; border-radius: 50%; filter: blur(70px) saturate(120%); opacity: 0.18; pointer-events: none; z-index: 1; }
+.art--one { top: -140px; right: -140px; background: radial-gradient(circle at 30% 30%, var(--brand), transparent 60%),
+                           radial-gradient(circle at 70% 70%, var(--brand-2), transparent 60%); }
+.art--two { top: auto; bottom: -200px; left: -200px; background: radial-gradient(circle at 60% 40%, var(--accent), transparent 60%),
+                           radial-gradient(circle at 40% 70%, var(--brand), transparent 60%); }
+
+/* Sections */
+.section-title { font-family: "Space Grotesk", Inter, system-ui, sans-serif; font-size: var(--f2); line-height: 1.05; margin: 0 0 20px; letter-spacing: -0.01em; }
+.section + .section { border-top: 1px solid var(--border); }
+.grid { display: grid; gap: 14px; }
+.grid.two { grid-template-columns: 1fr; }
+.grid.three { grid-template-columns: 1fr; }
+@media (min-width: 780px) { .grid.two { grid-template-columns: 1fr 1.2fr; } }
+@media (min-width: 960px) { .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; position: relative; overflow: hidden; }
+.card::after { content: ""; position: absolute; inset: -1px; border-radius: inherit; pointer-events: none; background: linear-gradient(135deg, color-mix(in oklab, var(--brand) 16%, transparent), transparent 35%, color-mix(in oklab, var(--accent) 14%, transparent)); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; padding: 1px; }
+.card:hover { border-color: color-mix(in oklab, var(--brand) 50%, var(--border)); }
+
+.role .role-head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.role h3 { margin: 0; font-size: 1.2rem; letter-spacing: 0.1px; }
+.role .org { margin: 6px 0 0; color: var(--muted); }
+.role .dates { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); font-size: 0.9rem; }
+.role .clients { color: var(--muted); margin: 8px 0 10px; }
+.bullets { margin: 6px 0 0; padding-left: 18px; }
+.bullets li { margin: 4px 0; }
+
+/* Skills */
+.pill-groups { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 900px) { .pill-groups { grid-template-columns: repeat(2, 1fr); } }
+.pill-group { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; }
+.pill-group h3 { margin: 0 0 10px; font-size: 1.05rem; color: var(--muted); }
+.pills { display: flex; flex-wrap: wrap; gap: 10px; }
+.pill { display: inline-flex; align-items: center; padding: 8px 12px; border: 1px solid var(--border); border-radius: 999px; background: color-mix(in oklab, var(--card) 70%, var(--brand) 6%); font-weight: 600; font-size: 0.92rem; color: var(--text); }
+
+/* Projects */
+.project-grid .project { display: flex; flex-direction: column; gap: 8px; }
+.project .card-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.project .date { color: var(--muted); font-size: 0.9rem; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; }
+.tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.tag { border: 1px dashed color-mix(in oklab, var(--border) 70%, var(--brand) 40%); color: color-mix(in oklab, var(--text) 80%, var(--brand) 20%); background: transparent; border-radius: 8px; padding: 6px 10px; font-size: 0.85rem; }
+
+/* Project filters */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 18px; }
+.filters .chip { display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); color: var(--text); cursor: pointer; font-weight: 600; font-size: 0.92rem; }
+.filters .chip[aria-pressed="true"] { background: linear-gradient(135deg, color-mix(in oklab, var(--brand) 45%, #fff), color-mix(in oklab, var(--brand-2) 45%, #fff)); color: #0a0b0f; }
+.project.is-hidden { display: none; }
+
+/* Stats */
+.stats-grid .stat { text-align: center; }
+.stat .num { font-family: "Space Grotesk", Inter, system-ui, sans-serif; font-size: clamp(2rem, 6vw, 3.4rem); font-weight: 700; letter-spacing: -0.02em; }
+.stat .label { color: var(--muted); margin-top: 6px; }
+
+/* DevOps Lab */
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+.form-grid label { display: grid; gap: 6px; font-size: 0.9rem; color: var(--muted); }
+.form-grid .span-2 { grid-column: span 2; }
+.form-grid input, .form-grid select, .form-grid textarea { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--text); font: inherit; }
+.code-block { margin-top: 10px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-2); overflow: auto; }
+.code-block pre { margin: 0; padding: 12px; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9rem; line-height: 1.5; }
+
+/* Contact */
+.contact-grid { display: grid; gap: 14px; grid-template-columns: repeat(1, minmax(0, 1fr)); }
+@media (min-width: 780px) { .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.contact-item { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; }
+.contact-item h3 { margin: 0 0 6px; font-size: 1rem; color: var(--muted); }
+.contact-item a { color: var(--text); text-decoration: none; }
+.contact-item a:hover { text-decoration: underline; }
+
+/* Quick action chips */
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); color: var(--text); cursor: pointer; font-weight: 600; font-size: 0.92rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.recruiter-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--border); background: color-mix(in oklab, var(--bg-2) 85%, transparent); padding: 14px 0; }
+.site-footer .small { color: var(--muted); }
+
+/* Responsive tuning for background art to avoid overlap */
+@media (max-width: 680px) {
+  .art { width: 360px; height: 360px; filter: blur(40px) saturate(110%); opacity: 0.14; }
+  .art--one { top: -80px; right: -120px; }
+  .art--two { bottom: -140px; left: -120px; }
+}
+
+/* Improve hero title readability on small screens */
+@media (max-width: 600px) {
+  :root {
+    --f2: clamp(1.25rem, 5.5vw, 1.6rem);
+    --f3: clamp(1rem, 4.5vw, 1.12rem);
+  }
+  .container { padding: 0 16px; }
+  .site-header .container { padding: calc(10px + env(safe-area-inset-top)/4) calc(16px + env(safe-area-inset-right)) 10px calc(16px + env(safe-area-inset-left)); }
+  .brand .mark { width: 30px; height: 30px; border-radius: 8px; }
+  .brand-text { font-size: 0.95rem; }
+  .section { padding: clamp(36px, 8vw, 64px) 0; }
+  .section-title { font-size: clamp(1.3rem, 6.4vw, 1.7rem); }
+  .hero { overflow: visible; padding-top: max(calc(var(--header) + 18px), clamp(72px, 14vw, 120px)); }
+  .hero .headline {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    color: var(--text) !important;
+    -webkit-text-fill-color: var(--text) !important;
+    line-height: 1.16;
+    text-shadow: none;
+    font-size: clamp(1.6rem, 9.5vw, 2.4rem);
+    letter-spacing: -0.01em;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+  .hero .eyebrow { font-size: clamp(1.05rem, 4.2vw, 1.4rem); }
+  .hero-sub { font-size: clamp(0.98rem, 3.8vw, 1.1rem); max-width: 100%; }
+  .btn { padding: 12px 16px; font-size: 1rem; width: 100%; justify-content: center; }
+  .cta-row { flex-direction: column; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-grid .span-2 { grid-column: auto; }
+  .role h3 { font-size: 1.05rem; }
+  .role .dates { font-size: 0.82rem; }
+  .pill { font-size: 0.9rem; padding: 7px 10px; }
+  .meta { font-size: 0.9rem; gap: 12px; }
+}
+
+@media (max-width: 360px) {
+  .hero .headline { font-size: clamp(1.35rem, 10vw, 2rem); }
+}
+
+@media (max-width: 400px) {
+  .brand-text { display: none; }
+  .menu-toggle { width: 40px; height: 40px; }
+  .theme-toggle { padding: 5px 8px; }
+}
+
+/* Print (for PDF resume export) */
+@media print {
+  .site-header, .hero .cta-row, .art, .theme-toggle, .nav, .site-footer { display: none !important; }
+  body { background: white; color: black; }
+  .card, .pill-group, .contact-item { box-shadow: none !important; background: white !important; border: 1px solid #ddd !important; }
+}
+  </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container row">
+        <a class="brand" href="#home" aria-label="Go to top">
+          <span class="mark">GB</span>
+          <span class="brand-text">Gangapuram Bhargav</span>
+        </a>
+        <nav class="nav" id="primary-nav" aria-label="Primary">
+          <a href="#about">Summary</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#projects">Projects</a>
+          <a href="#certs">Certifications</a>
+          <a href="#education">Education</a>
+          <a href="#hire">Hire Me</a>
+          <a href="#newsletter">Newsletter</a>
+          <a href="#contact">Contact</a>
+          <a href="https://www.linkedin.com/in/gangapurambhargav-cloudnetworkengineer/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.bhargav.work/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <button class="menu-close" id="menu-close" aria-label="Close menu" aria-controls="primary-nav">✕</button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="sun" aria-hidden>☀️</span>
+          <span class="moon" aria-hidden>🌙</span>
+        </button>
+        <button class="accent-toggle" id="accent-toggle" aria-label="Randomize accent colors" title="Randomize accent">🎨</button>
+        <button class="ats-toggle" id="ats-toggle" aria-label="Toggle ATS mode" title="ATS/plain text view">ATS</button>
+      </div>
+    </header>
+
+    <div id="progress" aria-hidden="true"></div>
+
+    <main id="main">
+      <style>main{ padding-top: var(--header); }</style>
+      <!-- Hero -->
+      <section id="home" class="section hero" aria-label="Intro">
+        <div class="container">
+          <div class="hero-wrap">
+            <h1 class="hero-title">
+              <span class="headline">Gangapuram&nbsp;Bhargav</span>
+              <span class="eyebrow">Cloud Network Engineer</span>
+            </h1>
+            <p class="hero-sub">
+              I design, automate, and secure cloud-native infrastructure across AWS and GCP —
+              containerization with Docker, orchestration on Kubernetes, and CI/CD with Jenkins & SonarQube.
+            </p>
+            <div class="cta-row">
+              <button class="btn primary open-scheduler" type="button">Book Intro Call</button>
+              <a class="btn ghost" href="#projects">View Projects</a>
+              <a class="btn ghost" href="#contact">Contact</a>
+              <a class="btn soft" href="https://www.linkedin.com/in/gangapurambhargav-cloudnetworkengineer/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn soft" href="mailto:gangapurambhargav1@gmail.com">Email</a>
+            </div>
+            <ul class="meta">
+              <li>📍 Hyderabad</li>
+              <li>📱 <a href="tel:+919603553366">+91&nbsp;9603553366</a></li>
+              <li>🌐 <a href="https://bhargav.work" target="_blank" rel="noopener">bhargav.work</a></li>
+              <li>⏰ IST: <span id="time-ist">--:--</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="art art--one" aria-hidden="true"></div>
+        <div class="art art--two" aria-hidden="true"></div>
+      </section>
+
+      
+
+      <!-- Summary -->
+      <section id="about" class="section" aria-label="Professional summary">
+        <div class="container grid two">
+          <div>
+            <h2 class="section-title">Professional Summary</h2>
+          </div>
+          <div>
+            <p>
+              Cloud Network Engineer with hands-on experience in cloud infrastructure management, networking, and DevOps automation.
+              Proficient in AWS, GCP, Docker containerization, Kubernetes orchestration, CI/CD pipelines with Jenkins, and VPS server administration.
+              Strong background in network design, routing, switching, firewalls, and infrastructure-as-code (IaC).
+              Skilled in implementing SonarQube for code quality, automating deployments, and managing hybrid cloud environments for optimal performance and security.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section" aria-label="Professional experience">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+
+          <article class="card role">
+            <div class="role-head">
+              <div>
+                <h3>Cloud Network Engineer</h3>
+                <p class="org">Dotin Solutions &amp; IntegerITSolutions — Remote | Hyderabad &amp; Carbondale, Illinois</p>
+              </div>
+              <div class="dates">09/2023 – 08/2025</div>
+            </div>
+            <p class="clients"><strong>Clients:</strong> PGL, Castan &amp; Lecca Boschean, AT&amp;T, Clearwave, Zoom</p>
+            <ul class="bullets">
+              <li>Managed complete Cloud IT infrastructure across AWS and GCP.</li>
+              <li>Performed Docker-based deployments on VPS to host scalable workloads.</li>
+              <li>Configured and monitored Kubernetes clusters for cloud-native services.</li>
+              <li>Built Jenkins CI/CD pipelines integrating Docker, Kubernetes, and SonarQube.</li>
+              <li>Administered network security with SonicWALL firewalls, NAT, and DHCP.</li>
+              <li>Configured OSPF, VTP, VLANs for network optimization.</li>
+              <li>Implemented virtualization; managed Windows Server AD &amp; Group Policy.</li>
+              <li>Connected 5 locations via IPsec VPN (AES-256, IKEv2) using SonicWALL.</li>
+              <li>Established hybrid connectivity between GCP Compute Engine and on‑prem DC using static routes, ACLs, and NAT traversal.</li>
+              <li>Implemented SNMP monitoring with threshold alerts and automated failover scripts for zero downtime.</li>
+            </ul>
+          </article>
+
+          <article class="card role">
+            <div class="role-head">
+              <div>
+                <h3>Technical Lead</h3>
+                <p class="org">CodeChef MREC Chapter — Hyderabad</p>
+              </div>
+              <div class="dates">08/2022 – 08/2025</div>
+            </div>
+            <ul class="bullets">
+              <li>Led a technical team; assigned tasks, managed risks, and delivered projects.</li>
+              <li>Guided members on coding practices, cloud concepts, and DevOps pipelines.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section" aria-label="Core skills and tools">
+        <div class="container">
+          <h2 class="section-title">Core Skills &amp; Tools</h2>
+          <div class="pill-groups">
+            <div class="pill-group">
+              <h3>Cloud Platforms</h3>
+              <div class="pills">
+                <span class="pill">GCP</span>
+                <span class="pill">AWS</span>
+              </div>
+            </div>
+            <div class="pill-group">
+              <h3>DevOps &amp; Automation</h3>
+              <div class="pills">
+                <span class="pill">Docker</span>
+                <span class="pill">Kubernetes</span>
+                <span class="pill">Jenkins</span>
+                <span class="pill">SonarQube</span>
+                <span class="pill">Ansible</span>
+                <span class="pill">Virtualization</span>
+                <span class="pill">VPS</span>
+              </div>
+            </div>
+            <div class="pill-group">
+              <h3>Networking</h3>
+              <div class="pills">
+                <span class="pill">OSPF</span>
+                <span class="pill">Subnetting</span>
+                <span class="pill">VTP</span>
+                <span class="pill">NAT</span>
+                <span class="pill">DHCP</span>
+                <span class="pill">Routing &amp; Switching</span>
+                <span class="pill">SonicWALL</span>
+                <span class="pill">EDR</span>
+              </div>
+            </div>
+            <div class="pill-group">
+              <h3>SysAdmin</h3>
+              <div class="pills">
+                <span class="pill">Windows Server</span>
+                <span class="pill">Active Directory</span>
+                <span class="pill">Group Policy</span>
+                <span class="pill">Linux Server</span>
+                <span class="pill">NAS</span>
+              </div>
+            </div>
+            <div class="pill-group">
+              <h3>Programming</h3>
+              <div class="pills">
+                <span class="pill">Python</span>
+                <span class="pill">C++</span>
+              </div>
+            </div>
+            <div class="pill-group">
+              <h3>Security</h3>
+              <div class="pills">
+                <span class="pill">Penetration Testing</span>
+                <span class="pill">IPsec VPN</span>
+                <span class="pill">Firewall Migration</span>
+              </div>
+            </div>
+            <div class="pill-group">
+              <h3>Other</h3>
+              <div class="pills">
+                <span class="pill">Git</span>
+                <span class="pill">GitHub</span>
+                <span class="pill">VMware</span>
+                <span class="pill">Monitoring</span>
+                <span class="pill">Cloud Computing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!-- Highlights -->
+      <section id="highlights" class="section" aria-label="Impact highlights">
+        <div class="container">
+          <h2 class="section-title">Impact Highlights</h2>
+          <div class="grid three stats-grid">
+            <article class="card stat"><div class="num" data-target="5" data-suffix="">0</div><div class="label">Sites linked via IPsec</div></article>
+            <article class="card stat"><div class="num" data-target="5" data-suffix="+">0</div><div class="label">Client organisations</div></article>
+            <article class="card stat"><div class="num" data-target="2" data-suffix="">0</div><div class="label">Cloud platforms (AWS, GCP)</div></article>
+            <article class="card stat"><div class="num" data-target="2" data-suffix="+">0</div><div class="label">Years professional experience</div></article>
+            <article class="card stat"><div class="num" data-target="2" data-suffix="">0</div><div class="label">Certifications</div></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section" aria-label="Projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div id="project-filters" class="filters" aria-label="Filter projects"></div>
+
+          <div class="grid three project-grid">
+            <article class="card project" data-tags="cloud,security,analytics">
+              <div class="card-head">
+                <h3>FindMyClient Patent</h3>
+                <div class="date">02/2025 – Present</div>
+              </div>
+              <p>Invented and patented a client tracking and engagement platform integrating real-time location intelligence, secure communications, and cloud-based analytics.</p>
+              <div class="tags">
+                <span class="tag">Cloud</span>
+                <span class="tag">Security</span>
+                <span class="tag">Analytics</span>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="networking,automation">
+              <div class="card-head">
+                <h3>DDNS Project</h3>
+                <div class="date">05/2025 – Present</div>
+              </div>
+              <p>Implemented a Dynamic DNS solution to maintain continuous access to services hosted on dynamic DNS.</p>
+              <div class="tags">
+                <span class="tag">Networking</span>
+                <span class="tag">Automation</span>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="docker,kubernetes,vps">
+              <div class="card-head">
+                <h3>Food Ordering App Deployment</h3>
+                <div class="date">07/2024 – Present</div>
+              </div>
+              <p>Deployed a food ordering application using Docker and Kubernetes on a VPS with Ubuntu Linux. Ensured high availability and scalability.</p>
+              <div class="tags">
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">VPS</span>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="aws,eks,jenkins,sonarqube">
+              <div class="card-head">
+                <h3>Docker + Kubernetes (EKS)</h3>
+                <div class="date">04/2024 – 07/2024</div>
+              </div>
+              <p>Deployed microservices on AWS EKS. Integrated SonarQube into Jenkins pipeline for pre-deploy code quality gates.</p>
+              <div class="tags">
+                <span class="tag">AWS</span>
+                <span class="tag">EKS</span>
+                <span class="tag">Jenkins</span>
+                <span class="tag">SonarQube</span>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="sonicwall,ipsec,gcp,networking,security">
+              <div class="card-head">
+                <h3>Firewall Migration &amp; Setup</h3>
+                <div class="date">01/2024 – 03/2024</div>
+              </div>
+              <p>Migrated configurations between SonicWALL firewalls. Established IPsec tunnels across multiple locations and Google Cloud VMs.</p>
+              <div class="tags">
+                <span class="tag">SonicWALL</span>
+                <span class="tag">IPsec</span>
+                <span class="tag">GCP</span>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="windows,gpo,endpoint,automation">
+              <div class="card-head">
+                <h3>GPO Application Deployment</h3>
+                <div class="date">06/2024</div>
+              </div>
+              <p>Automated MSI/MST deployments via Group Policy. Deployed SentinelOne across the network using GPO and NAS.</p>
+              <div class="tags">
+                <span class="tag">Windows Server</span>
+                <span class="tag">GPO</span>
+                <span class="tag">Endpoint</span>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="web,html,css">
+              <div class="card-head">
+                <h3>Personal Portfolio Website</h3>
+                <div class="date">06/2021 – 07/2021</div>
+              </div>
+              <p>Built and hosted a personal portfolio with links to resume, achievements, and projects.</p>
+              <div class="tags">
+                <span class="tag">Web</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="c++,security">
+              <div class="card-head">
+                <h3>Complex Password Generator</h3>
+                <div class="date">04/2021</div>
+              </div>
+              <p>Developed a password generator in C++ to create strong, random passwords.</p>
+              <div class="tags">
+                <span class="tag">C++</span>
+                <span class="tag">Security</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certs" class="section" aria-label="Certifications">
+        <div class="container">
+          <h2 class="section-title">Certifications</h2>
+          <ul class="list">
+            <li>
+              <span>CyberSecurity Essentials — Cisco Networking Academy</span>
+              <span class="date">2021</span>
+            </li>
+            <li>
+              <span>MTA — Python</span>
+              <span class="date">2021</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section" aria-label="Education">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <article class="card role">
+            <div class="role-head">
+              <div>
+                <h3>B.Tech — Computer Science &amp; Engineering</h3>
+                <p class="org">Malla Reddy Engineering College — Hyderabad</p>
+              </div>
+              <div class="dates">08/2019 – 08/2023</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Hire Me -->
+      <section id="hire" class="section" aria-label="Hire me">
+        <div class="container">
+          <h2 class="section-title">Hire Me</h2>
+          <p class="muted">Based in Hyderabad (IST). Available for remote or onsite roles. I specialize in building secure, scalable cloud networks and CI/CD platforms that ship reliably.</p>
+          <div class="grid three">
+            <article class="card">
+              <h3>Cloud Networking</h3>
+              <ul class="bullets">
+                <li>Hybrid connectivity: AWS/GCP ↔ on‑prem (routing, NAT, ACLs)</li>
+                <li>Site‑to‑site IPsec (SonicWALL), AES‑256, IKEv2</li>
+                <li>OSPF, VLAN/VTP, DHCP, HA firewalling</li>
+              </ul>
+              <button class="btn primary open-scheduler">Book Intro Call</button>
+            </article>
+            <article class="card">
+              <h3>DevOps &amp; Platforms</h3>
+              <ul class="bullets">
+                <li>Docker + Kubernetes (EKS/GKE) deployments</li>
+                <li>Jenkins pipelines with SonarQube gates</li>
+                <li>Observability, zero‑downtime rollouts</li>
+              </ul>
+              <button class="btn primary open-scheduler">Book Intro Call</button>
+            </article>
+            <article class="card">
+              <h3>Security &amp; Compliance</h3>
+              <ul class="bullets">
+                <li>Firewall migration &amp; hardening (SonicWALL)</li>
+                <li>Endpoint and network monitoring (SNMP, EDR)</li>
+                <li>Secure remote access, audit readiness</li>
+              </ul>
+              <button class="btn primary open-scheduler">Book Intro Call</button>
+            </article>
+          </div>
+
+          
+
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section id="newsletter" class="section" aria-label="Newsletter">
+        <div class="container">
+          <h2 class="section-title">Newsletter</h2>
+          <article class="card">
+            <p class="muted">Subscribe on Substack for deep dives into cloud networking, Kubernetes, CI/CD, and security architecture.</p>
+            <a class="btn primary" href="https://bhargavgbs.substack.com/" target="_blank" rel="noopener">Subscribe on Substack</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section" aria-label="Contact">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <h3>Email</h3>
+              <a href="mailto:gangapurambhargav1@gmail.com">gangapurambhargav1@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <h3>Phone</h3>
+              <a href="tel:+919603553366">+91 9603553366</a>
+            </div>
+            <div class="contact-item">
+              <h3>Location</h3>
+              <p>Hyderabad</p>
+            </div>
+            <div class="contact-item">
+              <h3>Portfolio</h3>
+              <a href="https://bhargav.work" target="_blank" rel="noopener">bhargav.work</a>
+            </div>
+            <div class="contact-item">
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/gangapurambhargav-cloudnetworkengineer/" target="_blank" rel="noopener">linkedin.com/in/gangapurambhargav-cloudnetworkengineer</a>
+            </div>
+            <div class="contact-item">
+              <h3>Resume</h3>
+              <a class="btn primary" href="https://www.bhargav.work/resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+              <p class="muted" style="margin:8px 0 0;">
+                Or view on Google Docs:
+                <a class="external" href="https://docs.google.com/document/d/1T3ziEXhqJrBt0SKwln3M0K4_6RS9TcUs80Dwh9xQz7I/edit?tab=t.0" target="_blank" rel="noopener">Open Doc</a>
+              </p>
+            </div>
+            <div class="contact-item">
+              <h3>Quick Actions</h3>
+              <div class="actions">
+                <button class="chip" id="copy-email">📋 Copy Email</button>
+                <button class="chip" id="copy-phone">📋 Copy Phone</button>
+                <button class="chip" id="download-vcard">⤓ Add to Contacts</button>
+                <button class="chip" id="share-profile">🔗 Share Profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container row">
+        <p>© <span id="year"></span> Gangapuram Bhargav. All rights reserved.</p>
+        
+      </div>
+    </footer>
+
+    <!-- Command Palette -->
+    <div id="cmdk" aria-hidden="true">
+      <div class="cmdk-backdrop"></div>
+      <div class="cmdk-panel" role="dialog" aria-modal="true" aria-label="Quick search">
+        <input id="cmdk-input" type="text" placeholder="Type to jump (e.g., projects)…" autocomplete="off" spellcheck="false" />
+        <ul id="cmdk-list" role="listbox"></ul>
+      </div>
+    </div>
+
+    <button id="to-top" class="to-top" aria-label="Back to top">↑</button>
+
+    <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- ATS toolbar (shows only in ATS mode) -->
+    <div id="ats-bar" class="ats-bar" aria-hidden="true">
+      <div class="container row">
+        <div class="ats-left">ATS/plain-text view</div>
+        <div class="ats-actions">
+          <button id="ats-copy" class="btn">Copy Plain Text</button>
+          <button id="ats-print" class="btn">Print/Save PDF</button>
+          <button id="ats-exit" class="btn primary">Exit ATS</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scheduler Modal -->
+    <div id="scheduler" aria-hidden="true">
+      <div class="sched-backdrop"></div>
+      <div class="sched-panel" role="dialog" aria-modal="true" aria-label="Book a meeting">
+        <div class="sched-head">
+          <h3>Book An Intro Call</h3>
+          <button id="sched-close" class="chip" aria-label="Close">✕</button>
+        </div>
+        <p class="muted">30‑minute call. Times shown in your timezone: <span id="tz-name"></span></p>
+        <div class="sched-grid">
+          <div class="sched-dates" id="sched-dates"></div>
+          <div class="sched-times" id="sched-times"></div>
+        </div>
+        <div id="sched-actions" class="sched-actions" hidden>
+          <button id="sched-gcal" class="btn primary">Add to Google Calendar</button>
+          <button id="sched-ics" class="btn">Download .ics</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Calendly widget script -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+    <script>
+// Theme toggle with localStorage persistence
+(function () {
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const KEY = 'gb-theme';
+
+  function applyTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    try { localStorage.setItem(KEY, t); } catch (_) {}
+  }
+
+  // Initialize from storage or system preference
+  const saved = (() => { try { return localStorage.getItem(KEY); } catch (_) { return null; } })();
+  if (saved) {
+    applyTheme(saved);
+  } else {
+    const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyTheme(systemDark ? 'dark' : 'light');
+  }
+
+  // Toggle click
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme') || 'dark';
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
+
+  // Update year
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+
+  // Active section highlighting in nav
+  const sections = Array.from(document.querySelectorAll('main section[id]'));
+  const navLinks = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
+  const linkById = new Map(
+    navLinks.map(a => [a.getAttribute('href')?.slice(1), a])
+  );
+
+  if ('IntersectionObserver' in window && sections.length && navLinks.length) {
+    const io = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute('id');
+          const link = linkById.get(id);
+          if (!link) return;
+          if (entry.isIntersecting) {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.5,
+        rootMargin: '-10% 0px -40% 0px'
+      }
+    );
+    sections.forEach(sec => io.observe(sec));
+  }
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menu-toggle');
+  const menuCloseBtn = document.getElementById('menu-close');
+  const nav = document.getElementById('primary-nav');
+  function closeMenu() {
+    document.body.classList.remove('nav-open');
+    if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+    if (menuBtn) { menuBtn.setAttribute('aria-label','Open menu'); menuBtn.textContent='☰'; }
+  }
+  function openMenu() {
+    document.body.classList.add('nav-open');
+    if (menuBtn) menuBtn.setAttribute('aria-expanded', 'true');
+    if (menuBtn) { menuBtn.setAttribute('aria-label','Close menu'); menuBtn.textContent='✕'; }
+  }
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', () => {
+      const open = document.body.classList.toggle('nav-open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      menuBtn.textContent = open ? '✕' : '☰';
+    });
+    if (menuCloseBtn) menuCloseBtn.addEventListener('click', closeMenu);
+    // Close when tapping the empty overlay area
+    nav.addEventListener('click', (e) => {
+      if (e.target === nav) closeMenu();
+    });
+    // Close on nav link click
+    navLinks.forEach(a => a.addEventListener('click', () => closeMenu()));
+    // Close on Escape
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+    // Close if switching to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 900) closeMenu();
+    });
+  }
+
+  // Accent color randomizer
+  const accentBtn = document.getElementById('accent-toggle');
+  const ACCENT_KEY = 'gb-accents';
+  function applyAccents({brand, brand2, accent}) {
+    if (!brand || !brand2 || !accent) return;
+    root.style.setProperty('--brand', brand);
+    root.style.setProperty('--brand-2', brand2);
+    root.style.setProperty('--accent', accent);
+    try { localStorage.setItem(ACCENT_KEY, JSON.stringify({brand, brand2, accent})); } catch (_) {}
+  }
+  function randomAccent() {
+    const h = Math.floor(Math.random()*360);
+    const brand = `hsl(${h} 86% 72%)`;
+    const brand2 = `hsl(${(h+40)%360} 78% 68%)`;
+    const accent = `hsl(${(h+300)%360} 72% 70%)`;
+    applyAccents({brand, brand2, accent});
+    toast('Accent colors updated');
+  }
+  // restore accents
+  try {
+    const savedA = localStorage.getItem(ACCENT_KEY);
+    if (savedA) applyAccents(JSON.parse(savedA));
+  } catch (_) {}
+  if (accentBtn) accentBtn.addEventListener('click', randomAccent);
+
+  // Scroll progress bar and back-to-top
+  const progress = document.getElementById('progress');
+  const toTop = document.getElementById('to-top');
+  function onScroll() {
+    const doc = document.documentElement;
+    const max = doc.scrollHeight - doc.clientHeight;
+    const val = max > 0 ? doc.scrollTop / max : 0;
+    if (progress) progress.style.transform = `scaleX(${val})`;
+    if (toTop) toTop.classList.toggle('show', doc.scrollTop > 600);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (toTop) toTop.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  // Command palette (Cmd/Ctrl+K)
+  const cmdk = document.getElementById('cmdk');
+  const cmdInput = document.getElementById('cmdk-input');
+  const cmdList = document.getElementById('cmdk-list');
+  let items = [];
+  function buildItems() {
+    items = sections.map(sec => ({ id: sec.id, label: sec.querySelector('.section-title')?.textContent?.trim() || sec.id }));
+    renderList(items);
+  }
+  function renderList(src, selectedIdx = 0) {
+    if (!cmdList) return;
+    cmdList.innerHTML = '';
+    src.forEach((it, i) => {
+      const li = document.createElement('li');
+      li.textContent = it.label;
+      li.setAttribute('role','option');
+      if (i === selectedIdx) li.setAttribute('aria-selected','true');
+      li.addEventListener('click', () => { navigateTo(it.id); closeCmdk(); });
+      cmdList.appendChild(li);
+    });
+    cmdList.dataset.count = String(src.length);
+  }
+  function openCmdk() {
+    document.body.classList.add('cmdk-open');
+    if (cmdInput) { cmdInput.value = ''; cmdInput.focus(); }
+    buildItems();
+  }
+  function closeCmdk() { document.body.classList.remove('cmdk-open'); }
+  function navigateTo(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  window.addEventListener('keydown', (e) => {
+    const isK = (e.key === 'k' || e.key === 'K') && (e.metaKey || e.ctrlKey);
+    if (isK) { e.preventDefault(); openCmdk(); }
+    if (e.key === 'Escape' && document.body.classList.contains('cmdk-open')) closeCmdk();
+  });
+  if (cmdk) cmdk.addEventListener('click', (e) => { if (e.target === cmdk || e.target.classList.contains('cmdk-backdrop')) closeCmdk(); });
+  if (cmdInput) {
+    let sel = 0; let filtered = items;
+    cmdInput.addEventListener('input', () => {
+      const q = cmdInput.value.toLowerCase().trim();
+      filtered = items.filter(it => it.label.toLowerCase().includes(q) || it.id.toLowerCase().includes(q));
+      sel = 0; renderList(filtered, sel);
+    });
+    cmdInput.addEventListener('keydown', (e) => {
+      const count = Number(cmdList?.dataset.count || 0) || 0;
+      if (!count) return;
+      if (e.key === 'ArrowDown') { e.preventDefault(); sel = (sel + 1) % count; renderList(filtered, sel); }
+      if (e.key === 'ArrowUp') { e.preventDefault(); sel = (sel - 1 + count) % count; renderList(filtered, sel); }
+      if (e.key === 'Enter') { e.preventDefault(); const pick = filtered[sel]; if (pick) { navigateTo(pick.id); closeCmdk(); } }
+    });
+  }
+
+  // Show current time in IST
+  const timeIST = document.getElementById('time-ist');
+  function updateIST() {
+    if (!timeIST) return;
+    try {
+      const fmt = new Intl.DateTimeFormat('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' });
+      timeIST.textContent = fmt.format(new Date());
+    } catch (_) {
+      timeIST.textContent = new Date().toLocaleTimeString();
+    }
+  }
+  updateIST();
+  setInterval(updateIST, 60000);
+
+  // Section title anchors with copy-to-clipboard
+  const titles = Array.from(document.querySelectorAll('.section-title'));
+  titles.forEach((h) => {
+    const sec = h.closest('section[id]');
+    if (!sec) return;
+    const link = document.createElement('a');
+    link.href = `#${sec.id}`;
+    link.className = 'anchor';
+    link.textContent = '#';
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const url = `${location.origin}${location.pathname}#${sec.id}`;
+      if (navigator.clipboard?.writeText) {
+        navigator.clipboard.writeText(url).then(() => toast('Link copied')); 
+      } else {
+        location.hash = sec.id; // fallback
+      }
+    });
+    h.appendChild(link);
+  });
+
+  // Toast helper
+  const toastEl = document.getElementById('toast');
+  let toastTimer = 0;
+  function toast(msg) {
+    if (!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove('show'), 1800);
+  }
+
+  // ATS mode: plain-text friendly view + copy/print
+  const atsToggle = document.getElementById('ats-toggle');
+  const atsBar = document.getElementById('ats-bar');
+  const atsCopy = document.getElementById('ats-copy');
+  const atsPrint = document.getElementById('ats-print');
+  const atsExit = document.getElementById('ats-exit');
+  function enterATS() { document.body.classList.add('ats'); root.setAttribute('data-theme','light'); toast('ATS mode enabled'); }
+  function exitATS() { document.body.classList.remove('ats'); toast('ATS mode disabled'); }
+  atsToggle?.addEventListener('click', () => { document.body.classList.contains('ats') ? exitATS() : enterATS(); });
+  atsExit?.addEventListener('click', exitATS);
+  atsPrint?.addEventListener('click', () => { if (!document.body.classList.contains('ats')) enterATS(); setTimeout(()=>window.print(), 50); });
+  function collectPlainText(){
+    const parts = [];
+    const name = document.querySelector('.hero .headline')?.textContent?.trim();
+    const title = document.querySelector('.hero .eyebrow')?.textContent?.trim();
+    parts.push(`${name} — ${title}`);
+    // Contact
+    const email = 'gangapurambhargav1@gmail.com';
+    const phone = '+91 9603553366';
+    const location = 'Hyderabad';
+    const website = 'https://bhargav.work';
+    const linkedin = 'https://www.linkedin.com/in/gangapurambhargav-cloudnetworkengineer/';
+    parts.push(`Contact: ${email} | ${phone} | ${location} | ${website} | ${linkedin}`);
+    // Summary
+    const summary = document.querySelector('#about p')?.innerText?.trim();
+    if (summary) parts.push('\nSummary:\n' + summary);
+    // Skills
+    const skills = Array.from(document.querySelectorAll('#skills .pill')).map(e=>e.textContent.trim());
+    if (skills.length) parts.push('\nSkills:\n' + skills.join(', '));
+    // Experience
+    const roles = Array.from(document.querySelectorAll('#experience .role'));
+    if (roles.length) {
+      parts.push('\nExperience:');
+      roles.forEach(r => {
+        const role = r.querySelector('h3')?.textContent?.trim();
+        const org = r.querySelector('.org')?.textContent?.trim();
+        const dates = r.querySelector('.dates')?.textContent?.trim();
+        const bullets = Array.from(r.querySelectorAll('.bullets li')).map(li=>'- ' + li.textContent.trim()).join('\n');
+        parts.push(`${role} | ${org} | ${dates}\n${bullets}`);
+      });
+    }
+    // Projects
+    const projects = Array.from(document.querySelectorAll('#projects .project')).slice(0,6).map(p=>{
+      const h = p.querySelector('h3')?.textContent?.trim();
+      const d = p.querySelector('.date')?.textContent?.trim();
+      const desc = p.querySelector('p')?.textContent?.trim();
+      return `- ${h} (${d}) — ${desc}`;
+    });
+    if (projects.length) parts.push('\nProjects:\n' + projects.join('\n'));
+    // Certifications
+    const certs = Array.from(document.querySelectorAll('#certs li')).map(li=>'- ' + li.innerText.trim());
+    if (certs.length) parts.push('\nCertifications:\n' + certs.join('\n'));
+    // Education
+    const edu = document.querySelector('#education .role .role-head')?.innerText?.trim();
+    if (edu) parts.push('\nEducation:\n' + edu);
+    return parts.join('\n');
+  }
+  atsCopy?.addEventListener('click', () => {
+    const text = collectPlainText();
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(text).then(() => toast('Plain text copied'));
+    } else {
+      copy(text, 'Plain text copied');
+    }
+  });
+
+  // Quick Actions: copy & vCard & share
+  const EMAIL = 'gangapurambhargav1@gmail.com';
+  const PHONE = '+919603553366';
+  const SITE = 'https://bhargav.work';
+  function copy(text, doneMsg) {
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(text).then(() => toast(doneMsg));
+    } else {
+      const ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); toast(doneMsg); } finally { document.body.removeChild(ta); }
+    }
+  }
+  document.getElementById('copy-email')?.addEventListener('click', () => copy(EMAIL, 'Email copied'));
+  document.getElementById('copy-phone')?.addEventListener('click', () => copy(PHONE, 'Phone copied'));
+  document.getElementById('download-vcard')?.addEventListener('click', () => {
+    const vcf = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      'N:Gangapuram;Bhargav;;;',
+      'FN:Gangapuram Bhargav',
+      'TITLE:Cloud Network Engineer',
+      `EMAIL;TYPE=INTERNET,PREF:${EMAIL}`,
+      `TEL;TYPE=CELL:${PHONE}`,
+      'ADR;TYPE=HOME:;;Hyderabad;;;;India',
+      `URL:${SITE}`,
+      'END:VCARD' 
+    ].join('\n');
+    const blob = new Blob([vcf], { type: 'text/vcard;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'Gangapuram-Bhargav.vcf';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    toast('vCard downloaded');
+  });
+  document.getElementById('share-profile')?.addEventListener('click', async () => {
+    const shareUrl = location.origin.startsWith('http') ? location.href : SITE;
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: 'Gangapuram Bhargav — Cloud Network Engineer', text: 'Cloud Network Engineer (AWS, GCP, K8s, DevOps).', url: shareUrl });
+        toast('Thanks for sharing!');
+      } catch (_) {}
+    } else {
+      copy(shareUrl, 'Link copied');
+    }
+  });
+
+  // Project filters (auto-generated from tags)
+  const projectGrid = document.querySelector('.project-grid');
+  const projectCards = Array.from(document.querySelectorAll('.project'));
+  const filterWrap = document.getElementById('project-filters');
+  if (projectCards.length && filterWrap) {
+    const allTags = new Set();
+    projectCards.forEach(card => {
+      const spans = Array.from(card.querySelectorAll('.tags .tag'));
+      spans.forEach(s => allTags.add(s.textContent.trim()));
+    });
+    const tagList = ['All', ...Array.from(allTags).sort((a,b)=>a.localeCompare(b))];
+    tagList.forEach((tag, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'chip';
+      btn.type = 'button';
+      btn.textContent = tag;
+      btn.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+      btn.addEventListener('click', () => applyFilter(tag, btn));
+      filterWrap.appendChild(btn);
+    });
+    function applyFilter(tag, btn) {
+      filterWrap.querySelectorAll('.chip').forEach(b => b.setAttribute('aria-pressed','false'));
+      btn.setAttribute('aria-pressed','true');
+      const t = tag.toLowerCase();
+      projectCards.forEach(card => {
+        if (tag === 'All') { card.classList.remove('is-hidden'); return; }
+        const tags = Array.from(card.querySelectorAll('.tags .tag')).map(s=>s.textContent.trim().toLowerCase());
+        if (tags.includes(t)) card.classList.remove('is-hidden'); else card.classList.add('is-hidden');
+      });
+    }
+  }
+
+  // Stat counters (Highlights)
+  const statNums = Array.from(document.querySelectorAll('.stat .num'));
+  if ('IntersectionObserver' in window && statNums.length) {
+    const statIO = new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+        if (!entry.isIntersecting) return;
+        const el = entry.target; statIO.unobserve(el);
+        const target = Number(el.dataset.target || '0');
+        const suffix = el.dataset.suffix || '';
+        const start = performance.now();
+        const dur = 900 + Math.random()*600;
+        function step(t){
+          const p = Math.min(1, (t - start)/dur);
+          const val = Math.round(target * (0.1 + 0.9*p));
+          el.textContent = `${val}${suffix}`;
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }, {threshold: 0.4});
+    statNums.forEach(n=>statIO.observe(n));
+  }
+
+  // Scheduler: generate next 14 days with 3 daily slots (local time)
+  const sched = {
+    root: document.getElementById('scheduler'),
+    dates: document.getElementById('sched-dates'),
+    times: document.getElementById('sched-times'),
+    actions: document.getElementById('sched-actions'),
+    gcal: document.getElementById('sched-gcal'),
+    ics: document.getElementById('sched-ics'),
+    closeBtn: document.getElementById('sched-close'),
+    tz: document.getElementById('tz-name'),
+    selectedDate: null,
+    selectedTime: null,
+  };
+  const CAL_URL = 'https://calendly.com/gangapurambhargav1/30min';
+  function openCalendly() {
+    if (window.Calendly && typeof window.Calendly.initPopupWidget === 'function') {
+      window.Calendly.initPopupWidget({ url: CAL_URL });
+    } else if (location.origin.startsWith('http')) {
+      window.open(CAL_URL, '_blank');
+    } else {
+      // local preview fallback to custom scheduler
+      openSched();
+    }
+  }
+  function openSched() { document.body.classList.add('sched-open'); buildDates(); }
+  function closeSched() { document.body.classList.remove('sched-open'); sched.actions.hidden = true; sched.selectedDate = null; sched.selectedTime = null; }
+  document.querySelectorAll('.open-scheduler').forEach(b => b.addEventListener('click', (e) => { e.preventDefault(); openCalendly(); }));
+  sched.closeBtn?.addEventListener('click', closeSched);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && document.body.classList.contains('sched-open')) closeSched(); });
+  sched.root?.addEventListener('click', (e) => { if (e.target === sched.root || e.target.classList.contains('sched-backdrop')) closeSched(); });
+
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function fmtDate(d){ return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }
+  function labelDate(d){ return d.toLocaleDateString(undefined,{weekday:'short', month:'short', day:'numeric'}); }
+  function localTZ(){ try{ return Intl.DateTimeFormat().resolvedOptions().timeZone; }catch(_){return 'Local';} }
+  if (sched.tz) sched.tz.textContent = localTZ();
+
+  function buildDates(){
+    if (!sched.dates) return;
+    sched.dates.innerHTML = '';
+    const today = new Date(); today.setHours(0,0,0,0);
+    for (let i=0;i<14;i++){
+      const d = new Date(today.getTime() + i*24*3600*1000);
+      const btn = document.createElement('button');
+      btn.textContent = labelDate(d);
+      btn.dataset.date = fmtDate(d);
+      btn.addEventListener('click', () => selectDate(d, btn));
+      sched.dates.appendChild(btn);
+    }
+  }
+  function selectDate(date, btn){
+    sched.selectedDate = new Date(date);
+    sched.dates.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed','false'));
+    btn.setAttribute('aria-pressed','true');
+    buildTimes();
+  }
+  function buildTimes(){
+    if (!sched.times || !sched.selectedDate) return;
+    sched.times.innerHTML = '';
+    const hours = [10, 14, 19]; // local hours
+    hours.forEach(h => {
+      const t = new Date(sched.selectedDate.getTime());
+      t.setHours(h, 0, 0, 0);
+      const b = document.createElement('button');
+      b.textContent = t.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+      b.dataset.time = `${pad(h)}:00`;
+      b.addEventListener('click', () => selectTime(t, b));
+      sched.times.appendChild(b);
+    });
+  }
+  function selectTime(dt, btn){
+    sched.selectedTime = dt;
+    sched.times.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed','false'));
+    btn.setAttribute('aria-pressed','true');
+    sched.actions.hidden = false;
+  }
+  function toCalDate(d){ return d.toISOString().replace(/[-:]/g,'').split('.')[0] + 'Z'; }
+  const TITLE = 'Intro Call with Gangapuram Bhargav';
+  const DETAILS = '30-minute intro call. Agenda: role, environment, success criteria. Contact: gangapurambhargav1@gmail.com';
+  sched.gcal?.addEventListener('click', () => {
+    if (!sched.selectedTime) return;
+    const start = new Date(sched.selectedTime);
+    const end = new Date(start.getTime() + 30*60000);
+    const url = new URL('https://calendar.google.com/calendar/render');
+    url.searchParams.set('action','TEMPLATE');
+    url.searchParams.set('text', TITLE);
+    url.searchParams.set('dates', `${toCalDate(start)}/${toCalDate(end)}`);
+    url.searchParams.set('details', DETAILS);
+    url.searchParams.set('location','Google Meet');
+    window.open(url.toString(), '_blank');
+  });
+
+  // (Kubernetes Lab removed)
+  sched.ics?.addEventListener('click', () => {
+    if (!sched.selectedTime) return;
+    const start = new Date(sched.selectedTime);
+    const end = new Date(start.getTime() + 30*60000);
+    const ics = [
+      'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//GB Portfolio//EN','CALSCALE:GREGORIAN',
+      'BEGIN:VEVENT',
+      `DTSTART:${toCalDate(start)}`,
+      `DTEND:${toCalDate(end)}`,
+      `SUMMARY:${TITLE}`,
+      `DESCRIPTION:${DETAILS}`,
+      'LOCATION:Google Meet','END:VEVENT','END:VCALENDAR'
+    ].join('\n');
+    const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'intro-call.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+})();
+    </script>
+  </body>
+  </html>
